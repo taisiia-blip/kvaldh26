@@ -4,7 +4,7 @@
     <title>joonistuspabei hinna leidj</title>
     <script>
       function arvutus(){
-        vastus.inneTextkogus.valueAsnumbe*60;
+        vastus.innerText="+(kogus.valueAsNumber*60)+" senti;
       }
     </script>
 </head>
@@ -12,7 +12,7 @@
    lehe hind on 60 snti. mitu lehte?<br/>
    <input type="number" id="kogus" />
    <input type="button" value="arvuta" onclick="arvutus()"/>
-   <span id="vastus">vastue koht</span>
+   <span id="vastus">vastuse koht</span>
    </body>
   </html>
   
