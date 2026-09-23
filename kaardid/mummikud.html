@@ -20,9 +20,10 @@
     }).addTo(kaart);
     L.marker([59.244409,25.682334]).addTo(kaart);
     L.circleMarker([59.248115,25.680901]).addTo(kaart);  
-    L.circle([59.248115,25.680901], {radius: 1000}).addTo(kaart).bindPopup("Vana maja");    
-    L.circle([59.247393,25.675671], {radius: 1000, color: "yellow"}).addTo(kaart).bindPopup("Järve");    
-
+    L.circle([59.248115,25.680901], {radius: 250}).addTo(kaart).bindPopup("Vana maja");    
+    L.ractangle([59.247393,25.675671], {color: "yellow"}).addTo(kaart).bindPopup("Järve");    
+// harjutus
+	   
    }
 
   </script>
