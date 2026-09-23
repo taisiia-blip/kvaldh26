@@ -18,10 +18,10 @@
 	  attribution: "Map: <a  href='http://www.maaamet.ee/'>Maa-amet</a>",
 	  tms: true,
     }).addTo(kaart);
-    L.marker([59.439, 24.773]).addTo(kaart);
-    L.circleMarker([59.433, 24.749]).addTo(kaart);  
-    L.circle([59.440, 24.737], {radius: 1000}).addTo(kaart).bindPopup("Raudteejaam");    
-    L.circle([59.427203, 24.773312], {radius: 1000, color: "yellow"}).addTo(kaart);    
+    L.marker([59.244409,25.682334]).addTo(kaart);
+    L.circleMarker([59.248115,25.680901]).addTo(kaart);  
+    L.circle([59.248115,25.680901], {radius: 1000}).addTo(kaart).bindPopup("Vana maja");    
+    L.circle([59.247393,25.675671], {radius: 1000, color: "yellow"}).addTo(kaart).bindPopup("Järve");    
 
    }
 
