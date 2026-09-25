@@ -1,19 +1,29 @@
-<!DOCTYPE html> 
+
+<!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Maiustuste kalkulaator</title>
+
     <script>
-      function arvutus(){
-        vastus.innerText="+(kogus.valueAsNumber*1)+" "tuhat miljard maiust";
-      }
+        function arvutus() {
+            vastus.innerText = (kogus.valueAsNumber * 1) + " tuhat miljard maiust";
+        }
     </script>
 </head>
- <body>
-   Kusti näeb täna väga nunnu välja, mitu maiustusi ma annan talle?<br/>
-   <input type="number" id="kogus" />
-   <input type="button" value="arvuta" onclick="arvutus()"/>
-   <span id="vastus">vastuse koht</span>
-   <img src= "maius.jpg" />
-   </body>
-  </html>
-  
+
+<body>
+
+    Kusti näeb täna väga nunnu välja, mitu maiustust ma annan talle?<br/>
+
+    <input type="number" id="kogus">
+    <input type="button" value="arvuta" onclick="arvutus()">
+    <span id="vastus">vastuse koht</span>
+    <br><br>
+    <img src="maius.jpg">
+
+</body>
+
+</html>
+
+
