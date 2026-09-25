@@ -1,17 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-   <head>
-      <title>Teated</title>
-	<script>
-    function loe(){
-      ftch(ilmateade.txt").then(d => d.text()).then(
-      
-    }
-    
-  </script>
-   </head>
-   <body>
-      <h1>Piltide leht</h1>
-	  <img src="https://ajapaik.ee/photo-thumb/187788/400/" />
-   </body>
-</html>	
+  <head>
+    <title>Teated</title>
+    <script>
+       function loe(){
+         fetch("ilmateade.txt").then(d => d.text()).then(kuva);
+       }
+       function kuva(tekst){
+          v1.innerText=tekst;
+       }
+    </script>
+  </head>
+  <body>
+    Teade: <span id="v1">teate koht</span>
+    <input type="button" value="Kuva teade" onclick="loe()"/>
+  </body>
+</html>
