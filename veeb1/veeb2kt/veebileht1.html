@@ -2,8 +2,31 @@
 <html>
    <head>
       <title>Gustav Kratos Väike (Kusti) - kuulus kass-punkar</title>
-	  <style>
-	    body{background-color: #ff4fb9}
+	<style>
+         body {
+            background-color: #ff4fb9;
+            font-family: Arial, sans-serif;
+            text-align: center;
+         }
+
+         h1 {
+            color: white;
+         }
+
+         .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            max-width: 900px;
+            margin: auto;
+         }
+
+         .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+		 }
 	  </style>
    </head>
    <body>
