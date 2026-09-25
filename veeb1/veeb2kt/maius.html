@@ -4,7 +4,16 @@
 
 <head>
     <title>Maiustuste kalkulaator</title>
+      <style>
+         body {
+            background-color: #ff4fb9;
+            font-family: Arial, sans-serif;
+            text-align: center;
+         }
 
+         h1 {
+            color: white;
+         }
     <script>
         function arvutus() {
             vastus.innerText = (kogus.valueAsNumber * 1) + " tuhat miljard maiust";
@@ -13,8 +22,7 @@
 </head>
 
 <body>
-
-    Kusti näeb täna väga nunnu välja, mitu maiustust ma annan talle?<br/>
+            Kusti näeb täna väga nunnu välja, mitu maiustust ma annan talle?<br/>
 
     <input type="number" id="kogus">
     <input type="button" value="arvuta" onclick="arvutus()">
