@@ -1,0 +1,12 @@
+function proov1() {
+  let leht=SpreadsheetApp.openById("1dghbzOzdn3acy3I1R6JsNCDcrd3PLtkl46E6xUr8CT8").getSheets()[0]; 
+  console.log(leht.getDataRange().getValues())
+  console.log(JSON.stringify(leht.getDataRange().getValues()));
+}
+
+function doGet(){
+    let leht=SpreadsheetApp.openById("1dghbzOzdn3acy3I1R6JsNCDcrd3PLtkl46E6xUr8CT8").getSheets()[0];
+    return ContentService.createTextOutput(
+      JSON.stringify(leht.getDataRange().getValues())).setMimeType(ContentService.MimeType.JSON)
+}
+//https://script.google.com/macros/s/AKfycbxztIOcVp9_nmyrWyfJsDR3QOAIZJzOYvTJu3C0kN4Lo6LH-I855poHev-Z1hUufbq3kg/exec
