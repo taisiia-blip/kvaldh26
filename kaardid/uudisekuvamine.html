@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teated</title>
+    <script>
+       function loe(){
+         fetch("https://script.google.com/macros/s/AKfycbxztIOcVp9_nmyrWyfJsDR3QOAIZJzOYvTJu3C0kN4Lo6LH-I855poHev-Z1hUufbq3kg/exec"
+                ).then(d => d.json()).then(kuva);
+       }
+       function kuva(tekst){
+          console.log(tekst);
+          v1.innerText=tekst;
+       }
+    </script>
+  </head>
+  <body>
+    Teade: <span id="v1">teate koht</span>
+    <input type="button" value="Kuva teade" onclick="loe()"/>
+  </body>
+</html>
