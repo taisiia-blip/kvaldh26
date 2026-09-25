@@ -5,16 +5,18 @@
 <head>
     <title>Maiustuste kalkulaator</title>
       <style>
-         body {
-            background-color: #ff4fb9;
-            font-family: Arial, sans-serif;
-            text-align: center;
-         }
-
-         h1 {
-            color: white;
-         }
+        body {
+    background-color: #ff4fb9;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+            img {
+            width: 200px;
+            height: auto;
+        }
+          
           </style>
+    
     <script>
         function arvutus() {
             vastus.innerText = (kogus.valueAsNumber * 1) + " tuhat miljard maiust";
@@ -29,7 +31,9 @@
     <input type="button" value="arvuta" onclick="arvutus()">
     <span id="vastus">vastuse koht</span>
     <br><br>
-    <img src="maius.jpg">
+    <img src="maius.jpg"> 
+    
+    
 
 </body>
 
