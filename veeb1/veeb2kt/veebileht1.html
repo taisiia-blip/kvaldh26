@@ -1,52 +1,90 @@
+```html
 <!doctype html>
 <html>
-   <head>
-      <title>Gustav Kratos Väike (Kusti) - kuulus kass-punkar</title>
 
-      <style>
-         body {
+<head>
+    <title>Kassiblogi</title>
+
+    <style>
+        body {
             background-color: #ff4fb9;
-            font-family: Arial, sans-serif;
             text-align: center;
-         }
+        }
 
-         h1 {
-            color: white;
-         }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-         .gallery {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-            max-width: 900px;
-            margin: auto;
-         }
+        .photo {
+            margin: 10px;
+            width: 200px;
+        }
 
-         .gallery img {
-            width: 100%;
+        .photo img {
+            width: 200px;
             height: 200px;
             object-fit: cover;
-            border-radius: 10px;
-         }
-      </style>
-   </head>
+        }
 
-   <body>
+        .photo p {
+            margin-top: 5px;
+            font-size: 16px;
+            color: white;
+        }
+    </style>
+</head>
 
-      <h1>Kassiblogi</h1>
+<body>
 
-      <div class="gallery">
+    <h1>Gustav Kratos Väike (Kusti) - kuulus kass-punkar</h1>
 
-         <img src="https://i.imgur.com/L1BG7Gs.jpeg">
-         <img src="https://i.imgur.com/MEE766N.jpeg">
-         <img src="https://i.imgur.com/lMqmgSZ.jpeg">
-         <img src="https://i.imgur.com/6cCianP.jpeg">
-         <img src="https://i.imgur.com/9xxylyz.jpeg">
-         <img src="https://i.imgur.com/9Z1a9O2.jpeg">
-         <img src="https://i.imgur.com/jHG0HTc.jpeg">
-         <img src="https://i.imgur.com/nyGrS5Y.jpeg">
+    <div class="gallery">
 
-      </div>
+        <div class="photo">
+            <img src="https://i.imgur.com/L1BG7Gs.jpeg">
+            <p>Olen täna väga ilus!</p>
+        </div>
 
-   </body>
+        <div class="photo">
+            <img src="https://i.imgur.com/MEE766N.jpeg">
+            <p>Siin olen nälja-kass!</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://i.imgur.com/lMqmgSZ.jpeg">
+            <p>Mina oma veebilehe tegemas</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://i.imgur.com/6cCianP.jpeg">
+            <p>Mina olen siin kuningas!</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://i.imgur.com/9xxylyz.jpeg">
+            <p>Hi-hi-hi!</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://i.imgur.com/9Z1a9O2.jpeg">
+            <p>Mu lemmik sõna!</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://i.imgur.com/jHG0HTc.jpeg">
+            <p>Emme punkar ka:P</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://i.imgur.com/nyGrS5Y.jpeg">
+            <p>AAAAA!</p>
+        </div>
+
+    </div>
+
+</body>
+
 </html>
+```
