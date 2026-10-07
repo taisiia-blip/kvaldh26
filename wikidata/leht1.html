@@ -1,0 +1,29 @@
+<!doctype hml>
+<html>
+   <head>
+     <script>
+       function kysi(){
+         let lause=`
+         SELECT ?item ?itemLabel 
+WHERE
+{
+  ?item wdt:P27 wd:Q212.
+  ?item wdt:P106 wd:Q177220.
+  
+        
+
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en".
+  }
+}
+         `;
+       }
+       function kuva(){
+       }
+     </script>
+   </head>
+  <body>
+    <input type="button" value="otsi" onclick="kysi()"/>
+    <div id
+  </body>
+</html>
