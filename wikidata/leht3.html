@@ -24,7 +24,33 @@
            fetch(aadress).then(d => d.json()).then(kuva);
         }
 
+function kool(){
+  let lause2=`SELECT ?kool ?koolLabel (COUNT(*) as ?kogus) {
+  ?isik wdt:P27 wd:Q191.
+  ?isik wdt:P106 wd:Q82955.
+  ?isik wdt:P69 ?kool.
+  
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "et,en".
+  } 
 
+} GROUP BY ?kool ?koolLabel
+ ORDER BY DESC(?kogus)
+`;
+  let aadress="https://query.wikidata.org/sparql?format=json&query="+encodeURI(lause2);  
+           vastus.innerHTML="ootan vastust";
+           fetch(aadress).then(d => d.json()).then(kuva2);
+}
+       function kuva2(d){
+           console.log(d);
+           vastus.innerHTML="";
+           for(let rida of d["results"]["bindings"]){
+              console.log(rida["itemLabel"]["value"]);
+              let lause=document.createElement("li");
+              lause.textContent=rida["itemLabel"]["value"];
+              vastus.appendChild(lause2);
+           }
+        }
        
         function kuva(d){
            console.log(d);
