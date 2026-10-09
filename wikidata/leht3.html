@@ -8,7 +8,7 @@
               WHERE
               {
                 ?item wdt:P27 wd:${riik.value}. 
-                ?item wdt:P106 wd:Q177220.
+                ?item wdt:P106 wd:${amet.value}.
               
                 SERVICE wikibase:label {
                   bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en".
@@ -17,6 +17,7 @@
               LIMIT 10
            `;
            let aadress="https://query.wikidata.org/sparql?format=json&query="+encodeURI(lause);      
+          vastus.innerHTML"ootan vastust...";
            fetch(aadress).then(d => d.json()).then(kuva);
         }
 
@@ -39,6 +40,13 @@
         <option value="Q33">Soome</option>
         <option value="Q191">Eesti</option>
         <option value="Q34">Rootsi</option>
+     </select>
+    
+    <select id="amet" onchange="kysi()">
+        <option value="Q4379701">Gamer</option>
+        <option value="Q2374149">Botanist</option>
+        <option value="Q82955">Poliitik</option>
+        <option value="Q201788">diplomaat</option>
      </select>
      <input type="button" value="otsi" onclick="kysi()" />
  
