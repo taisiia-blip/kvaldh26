@@ -7,7 +7,7 @@
              SELECT ?item ?itemLabel
               WHERE
               {
-                ?item wdt:P27 wd:${riik.value}.
+                ?item wdt:P27 wd:${riik.value}. 
                 ?item wdt:P106 wd:Q177220.
               
                 SERVICE wikibase:label {
@@ -21,15 +21,12 @@
         }
 
 
-
        
         function kuva(d){
            console.log(d);
            vastus.innerHTML="";
-           //vastus.textContent="";
            for(let rida of d["results"]["bindings"]){
               console.log(rida["itemLabel"]["value"]);
-              //vastus.textContent+=" "+rida["itemLabel"]["value"];
               let lause=document.createElement("li");
               lause.textContent=rida["itemLabel"]["value"];
               vastus.appendChild(lause);
@@ -38,14 +35,13 @@
      </script>
   </head>
   <body>
-    <select id ="riik" onchange="kysi()">
-      <option value="Q33">Soome</option>
-      <option value="Q191">Eesti</option>
-      <option value="Q34">Rootsi</option>
-      <option value="Q20">Norra</option>
-    </select>
-      
+     <select id="riik" onchange="kysi()">
+        <option value="Q33">Soome</option>
+        <option value="Q191">Eesti</option>
+        <option value="Q34">Rootsi</option>
+     </select>
      <input type="button" value="otsi" onclick="kysi()" />
+ 
      <ul id="vastus"></ul>
   </body>
 </html>
