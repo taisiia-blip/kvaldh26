@@ -19,7 +19,7 @@
             bd:serviceParam wikibase:language "en".
           }
         }
-        LIMIT 50
+        LIMIT 10
       `;
 
       saadaPäring(lause);
@@ -37,7 +37,7 @@
             bd:serviceParam wikibase:language "en".
           }
         }
-        LIMIT 50
+        LIMIT 10
       `;
 
       saadaPäring(lause);
@@ -55,7 +55,7 @@
             bd:serviceParam wikibase:language "en".
           }
         }
-        LIMIT 50
+        LIMIT 10
       `;
 
       saadaPäring(lause);
@@ -85,10 +85,9 @@
         });
     }
 
-    function kuva(d) {
      function kuva(d){
            console.log(d);
-           vastus.innerHTML="";
+           vastus.innerHTML="ootan vastust";
            for(let rida of d["results"]["bindings"]){
               console.log(rida["itemLabel"]["value"]);
               let lause=document.createElement("li");
