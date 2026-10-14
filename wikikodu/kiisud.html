@@ -84,21 +84,15 @@
             "Andmete laadimine ebaõnnestus: " + viga.message;
         });
     }
-
-     function kuva(d){
+  function kuva(d){
            console.log(d);
-           vastus.innerHTML="ootan vastust";
+           vastus.innerHTML="";
            for(let rida of d["results"]["bindings"]){
               console.log(rida["itemLabel"]["value"]);
               let lause=document.createElement("li");
               lause.textContent=rida["itemLabel"]["value"];
               vastus.appendChild(lause);
            }
-      }
-
-      if (d.results.bindings.length === 0) {
-        vastus.textContent = "Tulemusi ei leitud.";
-      }
     }
   </script>
 </head>
