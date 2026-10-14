@@ -80,13 +80,15 @@
     }
 
     function kuva(d) {
-      let vastus = document.getElementById("vastus");
-      vastus.replaceChildren();
-
-      for (let rida of d.results.bindings) {
-        let element = document.createElement("li");
-        element.textContent = rida.itemLabel.value;
-        vastus.appendChild(element);
+     function kuva(d){
+           console.log(d);
+           vastus.innerHTML="";
+           for(let rida of d["results"]["bindings"]){
+              console.log(rida["itemLabel"]["value"]);
+              let lause=document.createElement("li");
+              lause.textContent=rida["itemLabel"]["value"];
+              vastus.appendChild(lause);
+           }
       }
 
       if (d.results.bindings.length === 0) {
